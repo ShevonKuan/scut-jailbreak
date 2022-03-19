@@ -114,6 +114,11 @@ var Global_FN = {
             Info.stepBox[1].url = "img/true.png";
             Info.stepBox[2].url = "img/true.png";
 
+            Info.scutInfo[0].value = $("input[name$='scutName']").val();
+            Info.scutInfo[1].value = $("input[name$='scutCode']").val();
+            Info.scutInfo[2].value = $("input[name$='scutCollege']").val();
+            Info.scutInfo[3].value = $("input[name$='scutGrade']").val();
+            
             let htmlContent = "";
             $(".info_box").empty();
             $.each(Info.scutInfo, (_index, item) => {
